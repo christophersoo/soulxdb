@@ -6,7 +6,7 @@ function goToHome() {
 
     // Wait for the animation to finish before navigating
     setTimeout(() => {
-        window.location.href = 'home/home.html'; // Navigate to home.html
+        window.location.href = '../home.html'; // Navigate to home.html
     }, 1000); // Match this time with the CSS transition duration
 }
 
