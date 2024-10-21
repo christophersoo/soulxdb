@@ -1,13 +1,15 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
 body {
-    margin: 0;
-    height: 100vh;
+    height: 420vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    align-items:flex-start;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     font-size: 4rem;
-    background-color: rgb(52, 52, 52); /* Ensure the body starts black */
 }
 
 .dim-effect {
@@ -19,6 +21,7 @@ body {
     background: rgba(0, 0, 0, 1); /* Fully black by default */
     pointer-events: auto; /* Prevent clicks during transition */
     transition: background 1s ease; /* Transition for the dimming effect */
+    pointer-events: none; /* Allow clicks to pass through */
     z-index: 10;
 }
 
@@ -26,18 +29,80 @@ body {
     background: rgba(0, 0, 0, 0); /* Transparent when active */
 }
 
-.title {
-    font-size: 2rem;
+header {
+    position: fixed;
+    height: 20vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
 }
 
-.header {
+.title {
+    position: relative;
+    left: 5%;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.block0 {
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+}
+.block1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/image.png");
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     display: flex;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
     justify-content: center;
     align-items: center;
+}
+.block2 {
+    height: 100vh;
     width: 100vw;
-    margin: 0;
+    background-color: red;
+}
+.block3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+}
+.block4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+
+.block1-text{
+    font-size: 5rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10%; 
+    color: white;
+}
+
+a:hover {
+    text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 15px rgba(255, 255, 255, 0.4);
 }

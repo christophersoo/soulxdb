@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link to the home-specific CSS -->
+    <script src="script.js"></script> <!-- Link to the home-specific JS -->  
 </head>
 <body>
-    <div class="dim-effect"></div> <!-- For the dimming effect -->
-    <div class="header">
-        <h1 class="title">SoulX Homepage</h1>
+    <header>
+        <div style="height: 20vh; width: 30vw; display: flex; justify-content: center;">
+            <p class="title">SOULX</p>
+        </div>
+        <div style="height: 20vh; width: 50vw; display: flex; justify-content: space-evenly; align-items: flex-end;">
+            <div style="height: 10vh; display: flex; align-items: center;">
+                <a href="#block2"><p>INFO</p></a>
+            </div>
+            <div style="height: 10vh; display: flex; align-items: center;">
+                <a href="#block3"><p>STATS</p></a>
+            </div>
+            <div style="height: 10vh; display: flex; align-items: center;">
+                <a href="#block4"><p>JOIN</p></a>
+            </div>
+        </div>
+    </header>
+    <div class="block0"></div>
+    <div class="block1">
+        <p class="block1-text">
+            WE ARE SOUL X<br>
+            AND WE ARE ON TOP
+        </p>
     </div>
-    
-    <script src="script.js"></script> <!-- Link to the home-specific JS -->
+    <div id="block2" class="block2"></div>
+    <div id="block3" class="block3"></div>
+    <div id="block4" class="block4"></div>
+    <div class="dim-effect"></div> <!-- For the dimming effect -->
 </body>
 </html>
