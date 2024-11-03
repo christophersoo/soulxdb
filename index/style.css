@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    height: 100vh;
+    height: 200vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:flex-start;
+    flex-direction: column;;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 4rem;
@@ -12,8 +12,7 @@ body {
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    position: relative; /* Set position to relative */
-    height: 100vh; /* Full height of the viewport */
+    background-attachment: fixed;
 }
 
 
@@ -60,4 +59,12 @@ body {
 .dim-effect.active {
     background: rgba(0, 0, 0, 1); /* Fully black when active */
     pointer-events: auto;
+}
+
+.block0{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
