@@ -6,7 +6,7 @@ body {
     flex-direction: column;;
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 4rem;
+    font-size: 4em;
 
     background-image: url('../img/193346.jpg'); /* Add your image URL here */
     background-size: cover; /* Cover the entire background */
@@ -33,7 +33,7 @@ body {
 
 .letter:hover {
     user-select: none;
-    letter-spacing: 1rem; /* Increase space between letters */
+    letter-spacing: 1em; /* Increase space between letters */
 }
 
 .glow-text:hover {
