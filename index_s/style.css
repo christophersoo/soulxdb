@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    height: 200vh;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+
+    background-image: url('../img/193346.jpg'); /* Add your image URL here */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed;
+}
+
+
+.glow-text {
+    text-align: center;
+    color: white;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 15px rgba(255, 255, 255, 0.4);
+    transition: color 0.3s ease;
+}
+
+.letter {
+    display: inline-block;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.letter:hover {
+    user-select: none;
+    letter-spacing: 1em; /* Increase space between letters */
+}
+
+.glow-text:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+.no_underline {
+    text-decoration: none;
+}
+
+/* Dimming effect */
+.dim-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+    pointer-events: none; /* Allow clicks to pass through */
+    transition: background 1s ease; /* Transition for the dimming effect */
+}
+.dim-effect.active {
+    background: rgba(0, 0, 0, 1); /* Fully black when active */
+    pointer-events: auto;
+}
+
+.block0{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
