@@ -5,7 +5,7 @@ html, body {
     scroll-behavior: smooth;
 }
 body {
-    height: 420vh;
+    height: 680vh;
     display: flex;
     align-items:flex-start;
     flex-direction: column;
@@ -72,7 +72,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 8rem;
-    background-image: url('../img/RobloxScreenShot20241105_013014237.png'); /* Add your image URL here */
+    background-image: url('../img/RobloxScreenShot20241109_021829059.png'); /* Add your image URL here */
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -87,19 +87,24 @@ header {
     font-size: 4rem;
 }
 .block3 {
-    height: 100vh;
+    height: 20vh;
     width: 100vw;
     display: flex;
-    justify-content: space-between;
-    align-items:flex-start; 
-    flex-direction: column; 
 }
 .block4 {
-    height: 100vh;
+    height: 400vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-direction: column; 
+}
+.footer{
+    height: 50vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    
+    background-color:black;
 }
 
 .block1-text{
